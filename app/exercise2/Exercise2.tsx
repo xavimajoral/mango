@@ -5,11 +5,11 @@ import styles from '@/app/css/sharedPages.module.css';
 import Range from '@/components/Range';
 import type { FixedRangeResponse } from '@/lib/services';
 
-interface Exercise2ClientProps {
+interface Exercise2Props {
   rangeData: FixedRangeResponse;
 }
 
-export default function Exercise2({ rangeData }: Exercise2ClientProps) {
+export default function Exercise2({ rangeData }: Exercise2Props) {
   const [value, setValue] = useState<[number, number]>([
     rangeData.rangeValues[0],
     rangeData.rangeValues[rangeData.rangeValues.length - 1],

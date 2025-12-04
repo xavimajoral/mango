@@ -5,11 +5,11 @@ import styles from '@/app/css/sharedPages.module.css';
 import Range from '@/components/Range';
 import type { NormalRangeResponse } from '@/lib/services';
 
-interface Exercise1ClientProps {
+interface Exercise1Props {
   rangeData: NormalRangeResponse;
 }
 
-export default function Exercise1({ rangeData }: Exercise1ClientProps) {
+export default function Exercise1({ rangeData }: Exercise1Props) {
   const [value, setValue] = useState<[number, number]>([
     rangeData.min,
     rangeData.max,
