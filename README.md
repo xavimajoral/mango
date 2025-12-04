@@ -18,6 +18,7 @@ A modern, customizable range slider component built with React, Next.js, and Typ
   - Click labels to input values directly (Exercise 1 only)
   - Visual feedback with hover and active states
   - Visual marks for fixed value positions (Exercise 2)
+  - **📱 Mobile Support**: Fully functional on touch devices with optimized touch targets
 
 - **♿ Accessibility**
   - ARIA labels for screen readers
@@ -225,7 +226,7 @@ The project includes mock HTTP services in `lib/services.ts`:
 - **Performance**: Event listeners properly cleaned up
 - **Accessibility**: ARIA attributes and keyboard support
 - **Type Safety**: Full TypeScript coverage
-- **Responsive**: Works on different screen sizes
+- **Responsive**: Works on different screen sizes, fully optimized for mobile devices with touch event support
 - **Visual Feedback**: Hover states, dragging indicators, and visual marks
 
 ## 🔒 Security

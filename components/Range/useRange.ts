@@ -89,7 +89,10 @@ export function useRange({
         handleMove(e);
       };
       const handleMouseUp = () => setIsDragging(null);
-      const handleTouchEnd = () => setIsDragging(null);
+      const handleTouchEnd = () => {
+        setIsDragging(null);
+        setHoveredHandle(null);
+      };
 
       document.addEventListener('mousemove', handleMouseMove);
       document.addEventListener('mouseup', handleMouseUp);
@@ -103,6 +106,7 @@ export function useRange({
         document.removeEventListener('touchmove', handleTouchMove);
         document.removeEventListener('touchend', handleTouchEnd);
         document.body.classList.remove('dragging');
+        setHoveredHandle(null);
       };
     },
     [],
