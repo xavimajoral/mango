@@ -67,7 +67,7 @@ For more installation options, visit the [official pnpm documentation](https://p
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/xavimajoral/Mango
 cd mango
 ```
 
