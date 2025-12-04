@@ -224,8 +224,6 @@ The project includes mock HTTP services in `lib/services.ts`:
 - `fetchNormalRange()`: Returns `{ min: 1, max: 100 }`
 - `fetchFixedRange()`: Returns `{ rangeValues: [1.99, 5.99, 10.99, 30.99, 50.99, 70.99] }`
 
-Both services simulate a 500ms network delay.
-
 ## 🎯 Key Implementation Details
 
 - **Separation of Concerns**: Logic separated into `useRange` hook
